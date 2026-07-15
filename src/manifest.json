@@ -1,14 +1,18 @@
 {
   "manifest_version": 3,
-  "name": "Reopen Closed Tab with Command + Z / Ctrl + Z",
-  "version": "1.2",
-  "description": "Reopen closed tab with Command + Z, or Ctrl + Z on Windows. Will not conflict with the Undo function when in text editing field.",
+  "name": "Undo Close Tab",
+  "short_name": "Undo Close Tab",
+  "version": "2.0.0",
+  "description": "Restore the most recently closed tab using ⌘Z. Inspired by Safari, designed for Chromium browsers.",
+
   "permissions": [
     "sessions"
   ],
+
   "background": {
-    "service_worker": "background.js"
+    "service_worker": "service_worker.js"
   },
+
   "content_scripts": [
     {
       "matches": [
@@ -19,17 +23,25 @@
       ]
     }
   ],
+
   "action": {
+    "default_title": "Undo Close Tab",
+    "default_popup": "popup.html",
     "default_icon": {
-      "32": "icons/icon-32.png",
-      "64": "icons/icon-64.png",
-      "96": "icons/icon-96.png",
-      "128": "icons/icon-128.png",
-      "256": "icons/icon-256.png",
-      "512": "icons/icon-512.png"
-    },
-    "default_title": "Reopen Last Tab"
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
   },
+
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+
   "commands": {
     "reopen_last_tab": {
       "suggested_key": {
