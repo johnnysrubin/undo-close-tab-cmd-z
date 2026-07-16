@@ -1,4 +1,4 @@
-# Undo Close Tab
+# Undo Close Tab for Chromium
 
 Restore the most recently closed tab using **⌘Z** on macOS or **Ctrl+Z** on Windows.
 
