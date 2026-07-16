@@ -1,9 +1,9 @@
 {
   "manifest_version": 3,
-  "name": "Undo Close Tab for Chromium",
+  "name": "Undo Close Tab",
   "short_name": "Undo Close Tab",
   "version": "2.0.0",
-  "description": "Restore the most recently closed tab using a configurable keyboard shortcut. Designed for Chromium browsers.",
+  "description": "Restore the most recently closed tab with your preferred keyboard shortcut. Designed for Chromium browsers.",
 
   "permissions": [
     "sessions"

@@ -5,7 +5,7 @@
 <h1 align="center">Undo Close Tab</h1>
 
 <p align="center">
-Restore the most recently closed tab using a configurable keyboard shortcut.
+Restore the most recently closed tab with your preferred keyboard shortcut.
 <br>
 Designed for Chromium browsers.
 </p>
@@ -14,14 +14,14 @@ Designed for Chromium browsers.
 
 ## Features
 
-- Restore the most recently closed tab with a configurable keyboard shortcut
-- Designed for Chromium browsers
+- Restore the most recently closed tab with your preferred keyboard shortcut
 - Compatible with Brave, Google Chrome, Microsoft Edge, Vivaldi and Opera
 - Does not interfere with Undo while typing in text fields
 - Lightweight and fast
 - No tracking
 - No analytics
 - No data collection
+- Built using Manifest V3
 
 ---
 
@@ -55,41 +55,92 @@ Designed for Chromium browsers.
 
 ## Installation
 
-1. Download or clone this repository.
-2. Open your browser's extensions page:
+### Download
 
-- Brave: `brave://extensions`
-- Chrome: `chrome://extensions`
-- Edge: `edge://extensions`
+If you don't use Git:
 
-3. Enable **Developer mode**.
-4. Click **Load unpacked**.
-5. Select the **src** folder.
+1. Click the green **Code** button on this repository.
+2. Select **Download ZIP**.
+3. Extract the ZIP file.
+
+If you use Git:
+
+```bash
+git clone https://github.com/johnnysrubin/undo-close-tab-cmd-z.git
+```
+
+Then follow the installation instructions below.
 
 ---
 
-## Keyboard Shortcut
+### Brave
 
-Undo Close Tab supports a configurable keyboard shortcut.
+1. Open:
 
-Open your browser's:
+```
+brave://extensions
+```
 
-**Extensions → Keyboard Shortcuts**
+2. Enable **Developer mode**.
+3. Click **Load unpacked**.
+4. Select the project's **src** folder.
+5. Open:
 
-and assign your preferred shortcut.
+```
+brave://extensions/shortcuts
+```
 
-Suggested shortcuts:
+6. Assign your preferred keyboard shortcut (for example **⌘Z**).
 
-- **macOS:** ⌘Z
-- **Windows / Linux:** Ctrl+Z
+---
 
-> Browser shortcuts cannot be assigned automatically. They must be configured once by the user.
+### Google Chrome
+
+1. Open:
+
+```
+chrome://extensions
+```
+
+2. Enable **Developer mode**.
+3. Click **Load unpacked**.
+4. Select the project's **src** folder.
+5. Open:
+
+```
+chrome://extensions/shortcuts
+```
+
+6. Assign your preferred keyboard shortcut.
+
+---
+
+### Microsoft Edge
+
+1. Open:
+
+```
+edge://extensions
+```
+
+2. Enable **Developer mode**.
+3. Click **Load unpacked**.
+4. Select the project's **src** folder.
+5. Open:
+
+```
+edge://extensions/shortcuts
+```
+
+6. Assign your preferred keyboard shortcut.
+
+> **Note:** Browser extensions cannot assign keyboard shortcuts automatically. You only need to configure your preferred shortcut once.
 
 ---
 
 ## Permissions
 
-Undo Close Tab requires only one permission:
+Undo Close Tab requires only one permission.
 
 | Permission | Purpose |
 |------------|---------|
@@ -120,10 +171,10 @@ This project was inspired by the original **Reopen Closed Tab with Command + Z /
 It has since been redesigned and modernised with:
 
 - A simplified codebase
-- A modern Apple-inspired interface
+- A modern Apple-inspired user interface
 - New branding
-- Improved documentation
-- Manifest V3
+- Updated documentation
+- Manifest V3 support
 - Configurable keyboard shortcuts
 
 ---
