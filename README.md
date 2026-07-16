@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="src/icons/icon128.png" width="128" alt="Undo Close Tab for Chromium">
+  <img src="src/icons/icon128.png" width="128" alt="Undo Close Tab">
 </p>
 
-<h1 align="center">Undo Close Tab for Chromium</h1>
+<h1 align="center">Undo Close Tab</h1>
 
 <p align="center">
 Restore the most recently closed tab using a configurable keyboard shortcut.
@@ -57,9 +57,11 @@ Designed for Chromium browsers.
 
 1. Download or clone this repository.
 2. Open your browser's extensions page:
-   - Brave: `brave://extensions`
-   - Chrome: `chrome://extensions`
-   - Edge: `edge://extensions`
+
+- Brave: `brave://extensions`
+- Chrome: `chrome://extensions`
+- Edge: `edge://extensions`
+
 3. Enable **Developer mode**.
 4. Click **Load unpacked**.
 5. Select the **src** folder.
@@ -68,7 +70,7 @@ Designed for Chromium browsers.
 
 ## Keyboard Shortcut
 
-The extension supports a configurable keyboard shortcut.
+Undo Close Tab supports a configurable keyboard shortcut.
 
 Open your browser's:
 
@@ -81,48 +83,48 @@ Suggested shortcuts:
 - **macOS:** ⌘Z
 - **Windows / Linux:** Ctrl+Z
 
-> **Note:** Browser shortcuts cannot be assigned automatically. They must be configured once by the user.
-
----
-
-## Privacy
-
-Undo Close Tab for Chromium does **not**:
-
-- Collect personal information
-- Track users
-- Send data to external servers
-- Require an account
-- Display advertisements
-
-Everything runs locally inside your browser.
+> Browser shortcuts cannot be assigned automatically. They must be configured once by the user.
 
 ---
 
 ## Permissions
 
-The extension requests only one permission:
+Undo Close Tab requires only one permission:
 
 | Permission | Purpose |
 |------------|---------|
-| `sessions` | Restores the most recently closed tab |
+| `sessions` | Restore the most recently closed tab |
 
 No additional permissions are required.
 
 ---
 
+## Privacy
+
+Undo Close Tab:
+
+- Does not collect personal information
+- Does not track users
+- Does not connect to external servers
+- Does not require an account
+- Does not display advertisements
+
+Everything runs locally inside your browser.
+
+---
+
 ## Acknowledgements
 
-This project was inspired by the original **"Reopen Closed Tab with Command + Z / Ctrl + Z"** extension by **Yunfang Hou**.
+This project was inspired by the original **Reopen Closed Tab with Command + Z / Ctrl + Z** extension by **Yunfang Hou**.
 
-This version has been redesigned and modernised with:
+It has since been redesigned and modernised with:
 
 - A simplified codebase
-- A modern user interface
-- Updated branding
+- A modern Apple-inspired interface
+- New branding
 - Improved documentation
-- Manifest V3 support
-- A configurable keyboard shortcut
+- Manifest V3
+- Configurable keyboard shortcuts
 
 ---
 
